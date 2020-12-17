@@ -1,20 +1,15 @@
 # Installation
 
-```sh
-$ npm install ssh://git@bitbucket.org/vinasource/wam-frontend.git
+Install basic
+
+```
+$ npm i https://github.com/congtrieu112/formio-util
 ```
 
-Install a specific branch
-
 ```sh
-$ npm install ssh://git@bitbucket.org/vinasource/wam-frontend.git#{branch_name}
+$ npm install ssh://git@github.com:congtrieu112/formio-util.git
 ```
 
-Install a specific commit
-
-```sh
-$ npm install ssh://git@bitbucket.org/vinasource/wam-frontend.git#{commit_hash}
-```
 
 # Usage
 
