@@ -9,7 +9,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UtilImpl = void 0;
 require("reflect-metadata");
 var inversify_1 = require("inversify");
-require("reflect-metadata");
 var UtilImpl = /** @class */ (function () {
     function UtilImpl() {
     }
