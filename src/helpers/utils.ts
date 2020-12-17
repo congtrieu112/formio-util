@@ -6,8 +6,8 @@ export interface Util {
 }
 
 @injectable()
-export class UtilImpl {
-  public formatString(value: string, variables: object) {
+export class UtilImpl implements Util {
+  public formatString(value: string, variables: object): string {
     if (!value) {
       return '';
     }
