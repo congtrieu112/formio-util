@@ -4,7 +4,7 @@
     "outDir": "dist",
     "sourceMap": true,
     "module": "commonjs",
-    "lib": ["dom", "es2015", "es6"],
+    "lib": ["dom", "es6"],
     "moduleResolution": "node",
     "declaration": true,
     "types": ["reflect-metadata"],
