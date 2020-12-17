@@ -6,7 +6,10 @@
     "module": "commonjs",
     "lib": ["dom", "es2015"],
     "moduleResolution": "node",
-    "declaration": true
+    "declaration": true,
+    "types": ["reflect-metadata"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "exclude": ["node_modules", "dist"],
   "include": ["src"]
