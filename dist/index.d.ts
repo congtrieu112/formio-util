@@ -1,2 +1,2 @@
 export * from './helpers';
-export * from './container';
+export { default } from './container';

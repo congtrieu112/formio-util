@@ -11,5 +11,6 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./helpers"), exports);
-__exportStar(require("./container"), exports);
+var container_1 = require("./container");
+Object.defineProperty(exports, "default", { enumerable: true, get: function () { return container_1.default; } });
 //# sourceMappingURL=index.js.map
