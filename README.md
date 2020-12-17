@@ -20,44 +20,12 @@ $ npm install ssh://git@bitbucket.org/vinasource/wam-frontend.git#{commit_hash}
 
 Basic usage
 
-```jsx
-import { AuthContext, CognitoAuthProvider } from '@devblock/react-auth';
-
-const authProvider = new CognitoAuthProvider({});
-
-function App() {
-  return (
-    <AuthContext.Provider value={{ provider: authProvider }}>
-      <div className="app-content" />
-    </AuthContext.Provider>
-  );
-}
-```
-
-Using AuthContextProps in component
-
 ```js
-function Component() {
-  const { provider } = useAuthContext();
+import container, { Util } from "@devblock/formio-helpers";
 
-  return <Button onClick={() => provider.signOut()} />;
-}
+const util = container.get<Util>('util');
+console.log('convert string', util.formatString('home/{routerId}', {routerId:'123456789'}));
 ```
 
-Implement your own auth provider
 
-```js
-import {
-  BaseAuthProvider,
-  SignUpRequest,
-  SignUpResponse,
-} from '@devblock/react-auth';
 
-export class CustomAuthProvider extends BaseAuthProvider {
-  signUp(request: SignUpRequest): Promise<SignUpResponse> {
-    // implement your own logic here
-  }
-
-  ...
-}
-```
