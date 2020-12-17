@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.util = exports.Util = void 0;
-var Util = /** @class */ (function () {
-    function Util() {
+exports.UtilImpl = void 0;
+var UtilImpl = /** @class */ (function () {
+    function UtilImpl() {
     }
-    Util.prototype.formatString = function (value, variables) {
+    UtilImpl.prototype.formatString = function (value, variables) {
         if (!value) {
             return '';
         }
@@ -12,8 +12,7 @@ var Util = /** @class */ (function () {
             return variables[match.replace(/\{|\}|:/g, '')] || '';
         });
     };
-    return Util;
+    return UtilImpl;
 }());
-exports.Util = Util;
-exports.util = new Util();
+exports.UtilImpl = UtilImpl;
 //# sourceMappingURL=utils.js.map

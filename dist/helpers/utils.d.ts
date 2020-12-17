@@ -1,4 +1,6 @@
-export declare class Util {
+export interface Util {
     formatString(value: string, variables: object): string;
 }
-export declare const util: Util;
+export declare class UtilImpl {
+    formatString(value: string, variables: object): string;
+}
